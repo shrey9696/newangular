@@ -9,7 +9,7 @@ LABEL maintainer="shrey"
 RUN  mkdir /opt/test 
 RUN  rm /etc/nginx/conf.d/*
 
-COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY ./docker/nginx/conf.d/ /etc/nginx/conf.d/
+COPY ./docker/ngnix/ngnix.conf /etc/nginx/nginx.conf
+COPY ./docker/ngnix/conf.d/ /etc/nginx/conf.d/
 #COPY dist/ /usr/share/nginx/html/
 COPY dist/ /usr/share/nginx/html/
